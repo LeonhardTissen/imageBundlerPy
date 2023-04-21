@@ -16,13 +16,7 @@ height = int(sys.argv[4])
 ignore_prefix = sys.argv[5]
 
 # The json is more compact, but less readable
-if sys.argv[6] == 'compact':
-    compact_json = True
-elif sys.argv[6] == 'notcompact':
-    compact_json = False
-else:
-    print("Invalid argument:", sys.argv[6])
-    exit()
+compact_json = (sys.argv[6] == 'compact')
 
 # Get all files in the folder and sort them
 files = sorted(os.listdir(input_folder))
