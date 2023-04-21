@@ -1,5 +1,6 @@
 # ImageBundlerPy
 A tool to bundle images together into a spritesheet with a .json
+The .json is kept simple with only 4 keys per image, you only need to include image.py in your project.
 
 ## Example
 ```sh
